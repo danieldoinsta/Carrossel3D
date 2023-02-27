@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background: rgb(211, 147, 147);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/21/13/31/abstract-1845401_960_720.jpg);
+}
+
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(6, 85, 231);
+    
+}
+
+h1:hover{
+    background-color: rgb(196, 209, 7);
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0px auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear; 
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex; 
+}
+
+.imagem span {
+    margin: auto;
+    font-size:  1em;
+
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg)
+    }
+
+    to{
+        transform: rotateY(-360deg);
+    }
+
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://www.stockvault.net/data/2011/08/26/126385/preview16.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://www.stockvault.net/data/2012/09/04/134911/preview16.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://www.stockvault.net/data/2011/02/21/117773/preview16.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://www.stockvault.net/data/2017/10/17/239902/preview16.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://www.stockvault.net/data/2012/08/27/134462/preview16.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://www.stockvault.net/data/2009/11/08/111663/preview16.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://www.stockvault.net/data/2014/06/27/159279/preview16.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://cdn.pixabay.com/photo/2012/11/27/16/43/american-football-67439_960_720.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/09/20/33/basketball-933173_960_720.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+    display:block;
+    position: fixed;
+    bottom: 0vh;
+    left: 0%;
+    width: 100%;
+    background-color:rgba(15, 158, 110, 0.959);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer:hover{
+    background-color: rgb(42, 133, 212);
+}
+
+
